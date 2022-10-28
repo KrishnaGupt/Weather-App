@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <div id="loading">Fetching Data</div>
+    <main>
+    <h1>Weather-Today</h1>
+    <div class="search_city">
+        <input type="text" id="city_input" placeholder="Search city for current weather" />
+        <button id="search"><i class="bi bi-search"></i></button>
+    </div>
+    <div class="result">
+        <div class="condition_and_time">
+            <div class="city_name">
+                <h2>Current weather conditions in <span id="city">Seoul</span></h2>
+            </div>
+            <div class="day_time">
+                <span id="current_day">Sat</span>
+                <span id="current_time">03:45</span>
+            </div>
+        </div>
+        <div class="temperature_section">
+            <div id="left">
+                <div class="temperature">
+                    <p id="temp_deg">27<span id="temp_unit">°C</span></p>
+                    <p id="sky">Clear sky</p>
+                </div>
+                <div id="weather_icon">
+                    <i id="_icon" class="bi bi-brightness-low-fill"></i>
+                </div>
+            </div>
+            <div id="right">
+                <div class="other_info">
+                    <div id="divider"></div>
+                    <div class="info">
+                        <div id="info1">
+                            <span id="latitude">Latitude: 23.5434</span>
+                            <span id="longitude">Longitude: 80.9462</span>
+                        </div>
+                        <div id="info2">
+                            <span id="sunrise">Sunrise: 05:23</span>
+                            <span id="sunset">Sunset: 07:32</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div id="footer_divider"></div>
+            <div id="footer_info">
+                <div id="cloud_cover">
+                    <i class="bi bi-clouds-fill"></i> Cloud cover: 75%
+                </div>
+                <div id="wind_speed">
+                    <i class="bi bi-wind"></i> Wind Speed: 1.03 m/s
+                </div>
+                <div id="humidity">
+                    <i class="bi bi-droplet-fill"></i> Humidity: 51%
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <script src="script.js"></script>
+</body>
+
+</html>
