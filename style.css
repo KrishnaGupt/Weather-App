@@ -149,3 +149,74 @@ h1{
     transform: scale(0.9);
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1000px){
+    .search_city{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #city_input{
+        width: 70%;
+    }
+    .result{
+        height: auto;
+    }
+    #footer_info{
+        flex-direction: column;
+    }
+    #footer_info > div{
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 952px) and (min-width: 686px) {
+    .temperature_section{
+        width: auto;
+    }
+    #divider{
+        margin: 30px 10px;
+    }
+}
+@media only screen and (max-width: 680px){
+    body{
+        background: #8657fa;
+    }
+    main{
+        height: auto;
+    }
+    main h1{
+        font-size: 35px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .city_name h2{
+        text-align: center;
+    }
+    #temp_deg{
+        font-size: 45px;
+    }
+    .temperature_section{
+        flex-direction: column;
+    }
+    #right{
+        width: 100%;
+    }
+    .other_info{
+        flex-direction: column;
+        width: 100%;
+    }
+    #divider{
+        display: none;
+    }
+    .info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #info1, #info2{
+        display: flex;
+        justify-content: center;
+    }
+}
